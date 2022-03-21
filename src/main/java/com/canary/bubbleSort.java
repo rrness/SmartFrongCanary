@@ -42,7 +42,6 @@ public class bubbleSort {
                     //if condition is true, it means that our array is not in right order,
                     // so we should star over and by going back to the while loop
                     swapped = true;
-
                     //swapping with the dummy var (int temp)
                     int temp = arr[i];
                     arr[i] = arr[j];

@@ -1,23 +1,20 @@
-package com.canary;
+package canaryTests;
 import java.io.*;
 import java.util.*;
 import java.util.stream.IntStream;
-
-
+import org.testng.annotations.Test;
+import com.canary.bubbleSort;
 import org.junit.*;
 
 
 public class bubbleSortTest  {
 
-
     @Test
      public void creatingArray() {
 
         System.out.println("Test case: Creating Array");
-
         //creating an array
         int [] createdArray = bubbleSort.creatingArray();
-
         //getting the greatest number inside of array
         IntStream intStream = Arrays.stream(createdArray);
         OptionalInt optionalInt = intStream.max();
@@ -44,10 +41,8 @@ public class bubbleSortTest  {
     public void bubbleSort() {
 
         System.out.println("Test case: Bubble Sort");
-
         //initializing test array
         int [] testArray = {10,2,5,66,8,7,56,7,9,78};
-
         //initializing String for bubble Sorted Array Values
         String bubbleSortedArr = bubbleSort.bubbleSort(testArray);
         // sorting an array with the regular sort() method

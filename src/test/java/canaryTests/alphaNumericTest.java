@@ -1,15 +1,18 @@
-package com.canary;
+package canaryTests;
+import com.canary.alphaNumericSort;
 import org.junit.Assert;
-import org.junit.Test;
+//import org.junit.Test;
+import org.testng.annotations.Test;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
+
 
 public class alphaNumericTest {
 
 
     @Test
-    public void shouldTakeUserInput () throws IOException {
+    public void shouldTakeUserInput () {
 
         //declaring userInput var
         String userInput = "A11a4";
